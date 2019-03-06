@@ -1,0 +1,9 @@
+services:
+  extended_siteconfig.route_subscriber:
+    class: Drupal\extended_siteconfig\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+  extended_siteconfig.access_checker:
+    class: Drupal\extended_siteconfig\Access\CustomAccessCheck
+    tags:
+      - { name: access_check, applies_to: _content_type }

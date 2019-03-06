@@ -1,0 +1,13 @@
+extended_siteconfig.content:
+  path: '/page_json/{site_apikey}/{node_id}'
+  defaults:
+    _controller: 'Drupal\extended_siteconfig\Controller\CustomJsonApiController::renderApi'
+  methods:  [GET]
+  requirements:
+    _permission: 'access content'
+    _content_type:  'page'
+    _access: 'TRUE'
+  options:
+    parameters:
+      node_id:
+        type: entity:node.id
