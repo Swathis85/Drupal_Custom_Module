@@ -10,4 +10,4 @@ https://www.drupal.org/node/2122195#access-custom
 
 https://codeburst.io/how-to-send-the-json-data-from-a-drupal-8-site-c2ca2ae2de89
 
-Total time spent for the task: 12 hours
+
